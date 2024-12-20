@@ -1,0 +1,31 @@
+2024-12-20 12:53:12,113 - logging_config - INFO - Successfully executed query: SHOW TABLES;
+2024-12-20 13:37:47,570 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1")
+2024-12-20 13:38:23,372 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1")
+2024-12-20 13:39:31,090 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1")
+2024-12-20 13:40:04,523 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1")
+2024-12-20 13:40:34,399 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1")
+2024-12-20 13:41:09,798 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1")
+2024-12-20 13:43:35,052 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1")
+2024-12-20 13:45:11,210 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1")
+2024-12-20 13:46:22,370 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
+2024-12-20 13:47:10,439 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
+2024-12-20 13:47:34,635 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
+2024-12-20 13:47:34,921 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'orders' at line 1")
+2024-12-20 13:48:23,049 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
+2024-12-20 13:48:23,337 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'orders' at line 1")
+2024-12-20 13:49:10,061 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
+2024-12-20 13:49:10,371 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'orders' at line 1")
+2024-12-20 13:50:45,427 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'orders' at line 1")
+2024-12-20 13:51:20,592 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'orders' at line 1")
+2024-12-20 13:51:45,466 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'orders' at line 1")
+2024-12-20 13:52:20,025 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
+2024-12-20 13:52:39,269 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROMorders' at line 1")
+2024-12-20 13:53:37,951 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROMorders' at line 1")
+2024-12-20 13:54:45,463 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROMorders' at line 1")
+2024-12-20 13:55:04,349 - logging_config - INFO - Error with exception: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROMorders' at line 1")
+2024-12-20 13:55:48,461 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
+2024-12-20 13:56:39,708 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
+2024-12-20 13:57:59,390 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
+2024-12-20 13:58:00,060 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
+2024-12-20 13:58:31,390 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
+2024-12-20 13:58:31,706 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
