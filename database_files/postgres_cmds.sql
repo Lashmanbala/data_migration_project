@@ -7,6 +7,10 @@ CREATE USER retail_user WITH ENCRYPTED PASSWORD 'retail123';
 CREATE DATABASE retail_db;
 
 GRANT ALL PRIVILEGES ON DATABASE retail_db TO retail_user;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO retail_user;
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO retail_user;
+GRANT USAGE, CREATE ON SCHEMA public TO retail_user;
+
 
 -- Connect to the database
 \c retail_db;
