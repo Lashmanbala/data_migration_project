@@ -1,0 +1,4 @@
+pymysql==1.1.1
+cryptography==44.0.0   # The mysql server which i'm tyring to connect via pymysql, enforces some authentication. so this package is reqired with pymysql 
+psycopg2-binary==2.9.10
+python-dotenv==1.0.1
