@@ -36,6 +36,8 @@ def load_table(endpoint, db_name, user_name, password, table_name, columns, data
             counter += 1
         cursor.executemany(query, records)  # for the last batch of data which is lesser than batch_size
         conn.commit()
+        logger.info(f'Successfully loaded batch {counter} of {table_name}')
+
     
     except Exception as e:
         logger.error(f'Error with exception: {e}')

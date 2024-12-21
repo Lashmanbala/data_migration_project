@@ -1,30 +1,29 @@
 import dotenv
 import os
 from read import read_table
-from write import build_insert_query, load_table
-import psycopg2
+from write import load_table
 
-dotenv.load_dotenv()
+def main():
+    src_endpoint = os.environ.get('SOURCE_DB_HOST')
+    src_db_name = os.environ.get('SOURCE_DB_NAME')
+    src_user_name = os.environ.get('SOURCE_DB_USER')
+    src_password = os.environ.get('SOURCE_DB_PASS')
 
-endpoint = os.environ.get('SOURCE_DB_HOST')
-db_name = os.environ.get('SOURCE_DB_NAME')
-user_name = os.environ.get('SOURCE_DB_USER')
-password = os.environ.get('SOURCE_DB_PASS')
-table_name = 'categories'
-# limit = 10
+    tgt_endpoint = os.environ.get('TGT_DB_HOST')
+    tgt_user_name = os.environ.get('TGT_DB_USER')
+    tgt_password = os.environ.get('TGT_DB_PASS')
+    tgt_db_name = os.environ.get('TGT_DB_NAME')
 
-res = read_table(endpoint, db_name, user_name, password, table_name)
+    table_list = os.environ.get('TABLE_LIST_STR').split(', ')
 
-print(res[0])
-print(res[1])
+    for table_name in table_list:
 
-data = res[0]
-columns = res[1]
+        data, columns = read_table(src_endpoint, src_db_name, src_user_name, src_password, table_name)
+    
+        load_table(tgt_endpoint, tgt_db_name, tgt_user_name, tgt_password, table_name, columns, data)
 
 
-endpoint = os.environ.get('TGT_DB_HOST')
-user_name = os.environ.get('TGT_DB_USER')
-password = os.environ.get('TGT_DB_PASS')
-db_name = os.environ.get('TGT_DB_NAME')
+if __name__ == "__main__":
 
-load_table(endpoint, db_name, user_name, password, table_name, columns, data)
+    dotenv.load_dotenv()
+    main()
