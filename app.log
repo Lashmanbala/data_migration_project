@@ -29,3 +29,58 @@
 2024-12-20 13:58:00,060 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
 2024-12-20 13:58:31,390 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
 2024-12-20 13:58:31,706 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
+2024-12-20 21:05:45,656 - logging_config - INFO - Error with exception: could not translate host name "('ec2-3-234-244-120.compute-1.amazonaws.com'" to address: Name or service not known
+could not translate host name ")" to address: Name or service not known
+
+2024-12-20 21:06:46,651 - logging_config - INFO - Error with exception: could not translate host name "('ec2-3-234-244-120.compute-1.amazonaws.com'" to address: Name or service not known
+could not translate host name ")" to address: Name or service not known
+
+2024-12-20 21:07:28,427 - logging_config - INFO - Error with exception: could not translate host name "('ec2-3-234-244-120.compute-1.amazonaws.com'" to address: Name or service not known
+could not translate host name ")" to address: Name or service not known
+
+2024-12-20 21:14:36,147 - logging_config - INFO - Error with exception: could not translate host name "('ec2-3-234-244-120.compute-1.amazonaws.com'" to address: Name or service not known
+could not translate host name ")" to address: Name or service not known
+
+2024-12-20 21:16:47,186 - logging_config - INFO - Error with exception: could not translate host name "('ec2-3-234-244-120.compute-1.amazonaws.com'" to address: Name or service not known
+could not translate host name ")" to address: Name or service not known
+
+2024-12-20 21:23:28,251 - logging_config - INFO - Error with exception: could not translate host name "('ec2-3-234-244-120.compute-1.amazonaws.com'" to address: Name or service not known
+could not translate host name ")" to address: Name or service not known
+
+2024-12-20 21:23:55,902 - logging_config - INFO - Error with exception: could not translate host name "('ec2-3-234-244-120.compute-1.amazonaws.com'" to address: Name or service not known
+could not translate host name ")" to address: Name or service not known
+
+2024-12-20 21:29:39,689 - logging_config - INFO - Error with exception: could not translate host name "('ec2-3-234-244-120.compute-1.amazonaws.com'" to address: Name or service not known
+could not translate host name ")" to address: Name or service not known
+
+2024-12-21 08:10:50,476 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
+2024-12-21 08:10:50,790 - logging_config - INFO - Successfully executed query: SHOW COLUMNS FROM orders;
+2024-12-21 08:13:12,702 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
+2024-12-21 08:13:12,991 - logging_config - INFO - Successfully executed query: SHOW COLUMNS FROM orders;
+2024-12-21 08:28:13,107 - logging_config - INFO - Successfully executed query: SELECT * FROM orders LIMIT 10;
+2024-12-21 08:28:13,423 - logging_config - INFO - Successfully executed query: SHOW COLUMNS FROM orders;
+2024-12-21 09:38:13,443 - logging_config - INFO - Successfully executed query: SELECT * FROM departments LIMIT 10;
+2024-12-21 09:38:13,915 - logging_config - INFO - Successfully executed query: SHOW COLUMNS FROM departments;
+2024-12-21 09:38:16,805 - logging_config - ERROR - Error with exception: 'psycopg2.extensions.cursor' object has no attribute 'commit'
+2024-12-21 09:47:55,019 - logging_config - INFO - Successfully executed query: SELECT * FROM categories;
+2024-12-21 09:47:55,344 - logging_config - INFO - Successfully executed query: SHOW COLUMNS FROM categories;
+2024-12-21 09:47:57,571 - logging_config - ERROR - Error with exception: syntax error at or near "'category_id'"
+LINE 1: INSERT INTO categories ('category_id', 'category_department_...
+                                ^
+
+2024-12-21 10:14:08,116 - logging_config - INFO - Successfully executed query: SELECT * FROM categories;
+2024-12-21 10:14:08,436 - logging_config - INFO - Successfully executed query: SHOW COLUMNS FROM categories;
+2024-12-21 10:16:31,141 - logging_config - INFO - Successfully executed query: SELECT * FROM categories;
+2024-12-21 10:16:31,456 - logging_config - INFO - Successfully executed query: SHOW COLUMNS FROM categories;
+2024-12-21 10:17:14,657 - logging_config - INFO - Successfully executed query: SELECT * FROM categories;
+2024-12-21 10:17:14,976 - logging_config - INFO - Successfully executed query: SHOW COLUMNS FROM categories;
+2024-12-21 10:17:17,408 - logging_config - ERROR - Error with exception: syntax error at or near "Football"
+LINE 1: ...department_id, category_name) VALUES ('1', '2', ''Football''...
+                                                             ^
+
+2024-12-21 10:25:00,213 - logging_config - INFO - Successfully executed query: SELECT * FROM categories;
+2024-12-21 10:25:00,490 - logging_config - INFO - Successfully executed query: SHOW COLUMNS FROM categories;
+2024-12-21 10:25:02,831 - logging_config - ERROR - Error with exception: 'psycopg2.extensions.cursor' object has no attribute 'commit'
+2024-12-21 10:28:42,907 - logging_config - INFO - Successfully executed query: SELECT * FROM categories;
+2024-12-21 10:28:43,282 - logging_config - INFO - Successfully executed query: SHOW COLUMNS FROM categories;
+2024-12-21 10:28:45,811 - logging_config - INFO - Successfully loaded batch 0 of categories
