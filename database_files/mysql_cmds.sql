@@ -87,6 +87,11 @@ INTO TABLE categories
 FIELDS TERMINATED BY ',' 
 LINES TERMINATED BY '\n';
 
+LOAD DATA LOCAL INFILE '/migration_project/data/retail_db/departments/part-00000'
+INTO TABLE departments
+FIELDS TERMINATED BY ',' 
+LINES TERMINATED BY '\n';
+
 LOAD DATA LOCAL INFILE '/migration_project/data/retail_db/products/part-00000'
 INTO TABLE products
 FIELDS TERMINATED BY ',' 
