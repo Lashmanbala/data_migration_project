@@ -26,17 +26,19 @@ def load_table(endpoint, db_name, user_name, password, table_name, columns, data
 
         records = []
         counter = 1
+        batch_no = 1
         for rec in data:
             records.append(rec)
             if counter % batch_size == 0:
                 cursor.executemany(query, records)
                 conn.commit()
-                logger.info(f'Successfully loaded batch {counter} of {table_name}')
+                logger.info(f'Successfully loaded batch {batch_no} of {table_name}')
+                batch_no += 1
                 records = []
             counter += 1
         cursor.executemany(query, records)  # for the last batch of data which is lesser than batch_size
         conn.commit()
-        logger.info(f'Successfully loaded batch {counter} of {table_name}')
+        logger.info(f'Successfully loaded batch {batch_no} of {table_name}')
 
     
     except Exception as e:
