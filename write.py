@@ -25,7 +25,7 @@ def load_table(endpoint, db_name, user_name, password, table_name, columns, data
         query = build_insert_query(table_name, columns)
 
         records = []
-        counter = 0
+        counter = 1
         for rec in data:
             records.append(rec)
             if counter % batch_size == 0:
