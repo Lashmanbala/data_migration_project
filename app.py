@@ -2,6 +2,7 @@ import dotenv
 import os
 from read import read_table
 from write import load_table
+from logging_config import logger
 
 def main():
     src_endpoint = os.environ.get('SOURCE_DB_HOST')
@@ -17,9 +18,10 @@ def main():
     table_list = os.environ.get('TABLE_LIST_STR').split(', ')
 
     for table_name in table_list:
-
+        logger.info(f'Started reading {table_name}...')
         data, columns = read_table(src_endpoint, src_db_name, src_user_name, src_password, table_name)
     
+        logger.info(f'Started loading {table_name}...')    
         load_table(tgt_endpoint, tgt_db_name, tgt_user_name, tgt_password, table_name, columns, data)
 
 
