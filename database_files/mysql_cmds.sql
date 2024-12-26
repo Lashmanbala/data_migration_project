@@ -4,11 +4,11 @@
 
 CREATE USER IF NOT EXISTS 'retail_user' IDENTIFIED BY 'retail123';
 
+CREATE DATABASE IF NOT EXISTS retail_db;
+
 GRANT ALL PRIVILEGES ON retail_db.* TO 'retail_user';
 
 FLUSH PRIVILEGES;
-
-CREATE DATABASE IF NOT EXISTS retail_db;
 
 USE retail_db;
 
