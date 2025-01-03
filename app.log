@@ -642,3 +642,319 @@ DETAIL:  Key (department_id)=(2) already exists.
 2024-12-23 02:59:58,849 - logging_config - INFO - Successfully read column names of departments table
 2024-12-23 02:59:58,849 - logging_config - INFO - Started loading departments...
 2024-12-23 02:59:58,862 - logging_config - INFO - Successfully loaded batch 1 of departments
+2025-01-02 11:15:55,727 - logging_config - INFO - Started reading departments...
+2025-01-02 11:15:55,788 - logging_config - INFO - Successfully read data from departments
+2025-01-02 11:15:55,798 - logging_config - INFO - Successfully read column names of departments table
+2025-01-02 11:15:55,798 - logging_config - INFO - Started loading departments...
+2025-01-02 11:15:55,855 - logging_config - ERROR - Error with exception: permission denied for table departments
+
+2025-01-02 11:15:55,855 - logging_config - INFO - Started reading categories...
+2025-01-02 11:15:55,876 - logging_config - INFO - Successfully read data from categories
+2025-01-02 11:15:55,885 - logging_config - INFO - Successfully read column names of categories table
+2025-01-02 11:15:55,888 - logging_config - INFO - Started loading categories...
+2025-01-02 11:15:55,928 - logging_config - ERROR - Error with exception: permission denied for table categories
+
+2025-01-02 11:32:06,842 - logging_config - INFO - Started reading departments...
+2025-01-02 11:32:06,856 - logging_config - INFO - Successfully read data from departments
+2025-01-02 11:32:06,859 - logging_config - INFO - Successfully read column names of departments table
+2025-01-02 11:32:06,859 - logging_config - INFO - Started loading departments...
+2025-01-02 11:32:06,876 - logging_config - ERROR - Error with exception: connection to server at "ec2-44-203-70-176.compute-1.amazonaws.com" (172.31.82.203), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-01-02 11:33:12,741 - logging_config - INFO - Started reading departments...
+2025-01-02 11:33:12,753 - logging_config - INFO - Successfully read data from departments
+2025-01-02 11:33:12,755 - logging_config - INFO - Successfully read column names of departments table
+2025-01-02 11:33:12,756 - logging_config - INFO - Started loading departments...
+2025-01-02 11:33:12,775 - logging_config - INFO - Successfully loaded batch 1 of departments
+2025-01-02 11:33:12,775 - logging_config - INFO - Started reading categories...
+2025-01-02 11:33:12,783 - logging_config - INFO - Successfully read data from categories
+2025-01-02 11:33:12,785 - logging_config - INFO - Successfully read column names of categories table
+2025-01-02 11:33:12,786 - logging_config - INFO - Started loading categories...
+2025-01-02 11:33:12,807 - logging_config - INFO - Successfully loaded batch 1 of categories
+2025-01-03 10:29:27,308 - logging_config - INFO - Started reading departments...
+2025-01-03 10:29:27,373 - logging_config - INFO - Successfully read data from departments
+2025-01-03 10:29:27,400 - logging_config - INFO - Successfully read column names of departments table
+2025-01-03 10:29:27,400 - logging_config - INFO - Started loading departments...
+2025-01-03 10:29:27,438 - logging_config - INFO - Successfully loaded batch 1 of departments
+2025-01-03 10:53:52,962 - logging_config - INFO - Started reading departments...
+2025-01-03 10:53:52,973 - logging_config - INFO - Successfully read data from departments
+2025-01-03 10:53:52,976 - logging_config - INFO - Successfully read column names of departments table
+2025-01-03 10:53:52,976 - logging_config - INFO - Started loading departments...
+2025-01-03 10:53:53,020 - logging_config - INFO - Successfully loaded batch 1 of departments
+2025-01-03 10:53:53,020 - logging_config - INFO - Started reading categories...
+2025-01-03 10:53:53,037 - logging_config - INFO - Successfully read data from categories
+2025-01-03 10:53:53,047 - logging_config - INFO - Successfully read column names of categories table
+2025-01-03 10:53:53,047 - logging_config - INFO - Started loading categories...
+2025-01-03 10:53:53,098 - logging_config - INFO - Successfully loaded batch 1 of categories
+2025-01-03 11:02:36,118 - logging_config - INFO - Started reading departments...
+2025-01-03 11:02:36,121 - logging_config - INFO - Started reading order_items...
+2025-01-03 11:02:36,120 - logging_config - INFO - Started reading orders...
+2025-01-03 11:02:36,153 - logging_config - INFO - Successfully read data from departments
+2025-01-03 11:02:36,166 - logging_config - INFO - Successfully read column names of departments table
+2025-01-03 11:02:36,166 - logging_config - INFO - Started loading departments...
+2025-01-03 11:02:36,247 - logging_config - INFO - Successfully loaded batch 1 of departments
+2025-01-03 11:02:36,248 - logging_config - INFO - Started reading categories...
+2025-01-03 11:02:36,270 - logging_config - INFO - Successfully read data from categories
+2025-01-03 11:02:36,286 - logging_config - INFO - Successfully read column names of categories table
+2025-01-03 11:02:36,288 - logging_config - INFO - Started loading categories...
+2025-01-03 11:02:36,443 - logging_config - INFO - Successfully loaded batch 1 of categories
+2025-01-03 11:02:36,443 - logging_config - INFO - Started reading categories...
+2025-01-03 11:02:36,472 - logging_config - INFO - Successfully read data from categories
+2025-01-03 11:02:36,500 - logging_config - INFO - Successfully read column names of categories table
+2025-01-03 11:02:36,500 - logging_config - INFO - Started loading categories...
+2025-01-03 11:02:36,546 - logging_config - ERROR - Error with exception: duplicate key value violates unique constraint "categories_pkey"
+DETAIL:  Key (category_id)=(1) already exists.
+
+2025-01-03 11:02:36,546 - logging_config - INFO - Started reading products...
+2025-01-03 11:02:36,700 - logging_config - INFO - Successfully read data from products
+2025-01-03 11:02:36,711 - logging_config - INFO - Successfully read column names of products table
+2025-01-03 11:02:36,712 - logging_config - INFO - Started loading products...
+2025-01-03 11:02:38,075 - logging_config - INFO - Successfully loaded batch 1 of products
+2025-01-03 11:02:38,515 - logging_config - INFO - Successfully loaded batch 2 of products
+2025-01-03 11:02:41,575 - logging_config - INFO - Successfully read data from orders
+2025-01-03 11:02:41,580 - logging_config - INFO - Successfully read column names of orders table
+2025-01-03 11:02:41,583 - logging_config - INFO - Started loading orders...
+2025-01-03 11:02:42,217 - logging_config - INFO - Successfully loaded batch 1 of orders
+2025-01-03 11:02:42,787 - logging_config - INFO - Successfully loaded batch 2 of orders
+2025-01-03 11:02:43,436 - logging_config - INFO - Successfully loaded batch 3 of orders
+2025-01-03 11:02:44,255 - logging_config - INFO - Successfully loaded batch 4 of orders
+2025-01-03 11:02:44,966 - logging_config - INFO - Successfully loaded batch 5 of orders
+2025-01-03 11:02:45,667 - logging_config - INFO - Successfully loaded batch 6 of orders
+2025-01-03 11:02:46,511 - logging_config - INFO - Successfully loaded batch 7 of orders
+2025-01-03 11:02:46,962 - logging_config - INFO - Successfully loaded batch 8 of orders
+2025-01-03 11:02:47,416 - logging_config - INFO - Successfully read data from order_items
+2025-01-03 11:02:47,429 - logging_config - INFO - Successfully read column names of order_items table
+2025-01-03 11:02:47,431 - logging_config - INFO - Started loading order_items...
+2025-01-03 11:02:47,548 - logging_config - INFO - Successfully loaded batch 9 of orders
+2025-01-03 11:02:48,353 - logging_config - INFO - Successfully loaded batch 1 of order_items
+2025-01-03 11:02:48,356 - logging_config - INFO - Successfully loaded batch 10 of orders
+2025-01-03 11:02:49,032 - logging_config - INFO - Successfully loaded batch 2 of order_items
+2025-01-03 11:02:49,060 - logging_config - INFO - Successfully loaded batch 11 of orders
+2025-01-03 11:02:49,663 - logging_config - INFO - Successfully loaded batch 3 of order_items
+2025-01-03 11:02:49,731 - logging_config - INFO - Successfully loaded batch 12 of orders
+2025-01-03 11:02:50,392 - logging_config - INFO - Successfully loaded batch 4 of order_items
+2025-01-03 11:02:50,430 - logging_config - INFO - Successfully loaded batch 13 of orders
+2025-01-03 11:02:50,948 - logging_config - INFO - Successfully loaded batch 5 of order_items
+2025-01-03 11:02:51,013 - logging_config - INFO - Successfully loaded batch 14 of orders
+2025-01-03 11:02:51,636 - logging_config - INFO - Successfully loaded batch 6 of order_items
+2025-01-03 11:02:51,716 - logging_config - INFO - Successfully loaded batch 15 of orders
+2025-01-03 11:02:52,132 - logging_config - INFO - Successfully loaded batch 7 of order_items
+2025-01-03 11:02:52,229 - logging_config - INFO - Successfully loaded batch 16 of orders
+2025-01-03 11:02:52,440 - logging_config - INFO - Successfully loaded batch 8 of order_items
+2025-01-03 11:02:52,588 - logging_config - INFO - Successfully loaded batch 17 of orders
+2025-01-03 11:02:52,797 - logging_config - INFO - Successfully loaded batch 9 of order_items
+2025-01-03 11:02:52,892 - logging_config - INFO - Successfully loaded batch 18 of orders
+2025-01-03 11:02:53,227 - logging_config - INFO - Successfully loaded batch 10 of order_items
+2025-01-03 11:02:53,390 - logging_config - INFO - Successfully loaded batch 19 of orders
+2025-01-03 11:02:53,713 - logging_config - INFO - Successfully loaded batch 11 of order_items
+2025-01-03 11:02:53,828 - logging_config - INFO - Successfully loaded batch 20 of orders
+2025-01-03 11:02:54,057 - logging_config - INFO - Successfully loaded batch 12 of order_items
+2025-01-03 11:02:54,438 - logging_config - INFO - Successfully loaded batch 21 of orders
+2025-01-03 11:02:54,491 - logging_config - INFO - Successfully loaded batch 13 of order_items
+2025-01-03 11:02:55,137 - logging_config - INFO - Successfully loaded batch 22 of orders
+2025-01-03 11:02:55,186 - logging_config - INFO - Successfully loaded batch 14 of order_items
+2025-01-03 11:02:55,960 - logging_config - INFO - Successfully loaded batch 15 of order_items
+2025-01-03 11:02:55,965 - logging_config - INFO - Successfully loaded batch 23 of orders
+2025-01-03 11:02:56,625 - logging_config - INFO - Successfully loaded batch 16 of order_items
+2025-01-03 11:02:56,735 - logging_config - INFO - Successfully loaded batch 24 of orders
+2025-01-03 11:02:57,251 - logging_config - INFO - Successfully loaded batch 17 of order_items
+2025-01-03 11:02:57,384 - logging_config - INFO - Successfully loaded batch 25 of orders
+2025-01-03 11:02:57,911 - logging_config - INFO - Successfully loaded batch 18 of order_items
+2025-01-03 11:02:57,949 - logging_config - INFO - Successfully loaded batch 26 of orders
+2025-01-03 11:02:58,329 - logging_config - INFO - Successfully loaded batch 19 of order_items
+2025-01-03 11:02:58,375 - logging_config - INFO - Successfully loaded batch 27 of orders
+2025-01-03 11:02:58,720 - logging_config - INFO - Successfully loaded batch 20 of order_items
+2025-01-03 11:02:58,838 - logging_config - INFO - Successfully loaded batch 28 of orders
+2025-01-03 11:02:59,126 - logging_config - INFO - Successfully loaded batch 21 of order_items
+2025-01-03 11:02:59,228 - logging_config - INFO - Successfully loaded batch 29 of orders
+2025-01-03 11:02:59,504 - logging_config - INFO - Successfully loaded batch 22 of order_items
+2025-01-03 11:02:59,641 - logging_config - INFO - Successfully loaded batch 30 of orders
+2025-01-03 11:02:59,909 - logging_config - INFO - Successfully loaded batch 23 of order_items
+2025-01-03 11:03:00,149 - logging_config - INFO - Successfully loaded batch 31 of orders
+2025-01-03 11:03:00,446 - logging_config - INFO - Successfully loaded batch 24 of order_items
+2025-01-03 11:03:00,648 - logging_config - INFO - Successfully loaded batch 32 of orders
+2025-01-03 11:03:01,453 - logging_config - INFO - Successfully loaded batch 25 of order_items
+2025-01-03 11:03:01,734 - logging_config - INFO - Successfully loaded batch 33 of orders
+2025-01-03 11:03:02,268 - logging_config - INFO - Successfully loaded batch 26 of order_items
+2025-01-03 11:03:02,716 - logging_config - INFO - Successfully loaded batch 34 of orders
+2025-01-03 11:03:02,850 - logging_config - INFO - Successfully loaded batch 27 of order_items
+2025-01-03 11:03:03,332 - logging_config - INFO - Successfully loaded batch 35 of orders
+2025-01-03 11:03:03,343 - logging_config - INFO - Successfully loaded batch 28 of order_items
+2025-01-03 11:03:03,684 - logging_config - INFO - Successfully loaded batch 36 of orders
+2025-01-03 11:03:03,697 - logging_config - INFO - Successfully loaded batch 29 of order_items
+2025-01-03 11:03:04,223 - logging_config - INFO - Successfully loaded batch 30 of order_items
+2025-01-03 11:03:04,246 - logging_config - INFO - Successfully loaded batch 37 of orders
+2025-01-03 11:03:04,600 - logging_config - INFO - Successfully loaded batch 31 of order_items
+2025-01-03 11:03:04,658 - logging_config - INFO - Successfully loaded batch 38 of orders
+2025-01-03 11:03:05,331 - logging_config - INFO - Successfully loaded batch 32 of order_items
+2025-01-03 11:03:05,496 - logging_config - INFO - Successfully loaded batch 39 of orders
+2025-01-03 11:03:06,159 - logging_config - INFO - Successfully loaded batch 33 of order_items
+2025-01-03 11:03:06,328 - logging_config - INFO - Successfully loaded batch 40 of orders
+2025-01-03 11:03:06,943 - logging_config - INFO - Successfully loaded batch 34 of order_items
+2025-01-03 11:03:07,061 - logging_config - INFO - Successfully loaded batch 41 of orders
+2025-01-03 11:03:07,632 - logging_config - INFO - Successfully loaded batch 35 of order_items
+2025-01-03 11:03:07,834 - logging_config - INFO - Successfully loaded batch 42 of orders
+2025-01-03 11:03:08,232 - logging_config - INFO - Successfully loaded batch 36 of order_items
+2025-01-03 11:03:08,434 - logging_config - INFO - Successfully loaded batch 43 of orders
+2025-01-03 11:03:08,732 - logging_config - INFO - Successfully loaded batch 37 of order_items
+2025-01-03 11:03:08,945 - logging_config - INFO - Successfully loaded batch 44 of orders
+2025-01-03 11:03:09,264 - logging_config - INFO - Successfully loaded batch 38 of order_items
+2025-01-03 11:03:09,842 - logging_config - INFO - Successfully loaded batch 45 of orders
+2025-01-03 11:03:10,021 - logging_config - INFO - Successfully loaded batch 39 of order_items
+2025-01-03 11:03:10,555 - logging_config - INFO - Successfully loaded batch 46 of orders
+2025-01-03 11:03:10,780 - logging_config - INFO - Successfully loaded batch 40 of order_items
+2025-01-03 11:03:11,179 - logging_config - INFO - Successfully loaded batch 47 of orders
+2025-01-03 11:03:11,317 - logging_config - INFO - Successfully loaded batch 41 of order_items
+2025-01-03 11:03:11,590 - logging_config - INFO - Successfully loaded batch 48 of orders
+2025-01-03 11:03:11,734 - logging_config - INFO - Successfully loaded batch 42 of order_items
+2025-01-03 11:03:12,307 - logging_config - INFO - Successfully loaded batch 49 of orders
+2025-01-03 11:03:12,330 - logging_config - INFO - Successfully loaded batch 43 of order_items
+2025-01-03 11:03:13,058 - logging_config - INFO - Successfully loaded batch 50 of orders
+2025-01-03 11:03:13,075 - logging_config - INFO - Successfully loaded batch 44 of order_items
+2025-01-03 11:03:13,873 - logging_config - INFO - Successfully loaded batch 45 of order_items
+2025-01-03 11:03:13,962 - logging_config - INFO - Successfully loaded batch 51 of orders
+2025-01-03 11:03:14,611 - logging_config - INFO - Successfully loaded batch 46 of order_items
+2025-01-03 11:03:14,685 - logging_config - INFO - Successfully loaded batch 52 of orders
+2025-01-03 11:03:15,011 - logging_config - INFO - Successfully loaded batch 47 of order_items
+2025-01-03 11:03:15,111 - logging_config - INFO - Successfully loaded batch 53 of orders
+2025-01-03 11:03:15,520 - logging_config - INFO - Successfully loaded batch 48 of order_items
+2025-01-03 11:03:15,677 - logging_config - INFO - Successfully loaded batch 54 of orders
+2025-01-03 11:03:16,021 - logging_config - INFO - Successfully loaded batch 49 of order_items
+2025-01-03 11:03:16,102 - logging_config - INFO - Successfully loaded batch 55 of orders
+2025-01-03 11:03:16,400 - logging_config - INFO - Successfully loaded batch 50 of order_items
+2025-01-03 11:03:16,571 - logging_config - INFO - Successfully loaded batch 56 of orders
+2025-01-03 11:03:16,769 - logging_config - INFO - Successfully loaded batch 51 of order_items
+2025-01-03 11:03:16,930 - logging_config - INFO - Successfully loaded batch 57 of orders
+2025-01-03 11:03:17,185 - logging_config - INFO - Successfully loaded batch 52 of order_items
+2025-01-03 11:03:17,439 - logging_config - INFO - Successfully loaded batch 58 of orders
+2025-01-03 11:03:17,950 - logging_config - INFO - Successfully loaded batch 53 of order_items
+2025-01-03 11:03:18,238 - logging_config - INFO - Successfully loaded batch 59 of orders
+2025-01-03 11:03:18,574 - logging_config - INFO - Successfully loaded batch 54 of order_items
+2025-01-03 11:03:18,778 - logging_config - INFO - Successfully loaded batch 60 of orders
+2025-01-03 11:03:19,032 - logging_config - INFO - Successfully loaded batch 55 of order_items
+2025-01-03 11:03:19,286 - logging_config - INFO - Successfully loaded batch 61 of orders
+2025-01-03 11:03:19,840 - logging_config - INFO - Successfully loaded batch 56 of order_items
+2025-01-03 11:03:19,978 - logging_config - INFO - Successfully loaded batch 62 of orders
+2025-01-03 11:03:20,574 - logging_config - INFO - Successfully loaded batch 57 of order_items
+2025-01-03 11:03:20,746 - logging_config - INFO - Successfully loaded batch 63 of orders
+2025-01-03 11:03:20,975 - logging_config - INFO - Successfully loaded batch 58 of order_items
+2025-01-03 11:03:21,155 - logging_config - INFO - Successfully loaded batch 64 of orders
+2025-01-03 11:03:21,391 - logging_config - INFO - Successfully loaded batch 59 of order_items
+2025-01-03 11:03:21,587 - logging_config - INFO - Successfully loaded batch 65 of orders
+2025-01-03 11:03:21,797 - logging_config - INFO - Successfully loaded batch 60 of order_items
+2025-01-03 11:03:21,991 - logging_config - INFO - Successfully loaded batch 66 of orders
+2025-01-03 11:03:22,243 - logging_config - INFO - Successfully loaded batch 61 of order_items
+2025-01-03 11:03:22,524 - logging_config - INFO - Successfully loaded batch 67 of orders
+2025-01-03 11:03:22,804 - logging_config - INFO - Successfully loaded batch 62 of order_items
+2025-01-03 11:03:23,037 - logging_config - INFO - Successfully loaded batch 68 of orders
+2025-01-03 11:03:23,220 - logging_config - INFO - Successfully loaded batch 63 of order_items
+2025-01-03 11:03:23,399 - logging_config - INFO - Successfully loaded batch 69 of orders
+2025-01-03 11:03:23,738 - logging_config - INFO - Successfully loaded batch 64 of order_items
+2025-01-03 11:03:24,116 - logging_config - INFO - Successfully loaded batch 65 of order_items
+2025-01-03 11:03:24,472 - logging_config - INFO - Successfully loaded batch 66 of order_items
+2025-01-03 11:03:24,807 - logging_config - INFO - Successfully loaded batch 67 of order_items
+2025-01-03 11:03:25,110 - logging_config - INFO - Successfully loaded batch 68 of order_items
+2025-01-03 11:03:25,445 - logging_config - INFO - Successfully loaded batch 69 of order_items
+2025-01-03 11:03:25,759 - logging_config - INFO - Successfully loaded batch 70 of order_items
+2025-01-03 11:03:26,003 - logging_config - INFO - Successfully loaded batch 71 of order_items
+2025-01-03 11:03:26,416 - logging_config - INFO - Successfully loaded batch 72 of order_items
+2025-01-03 11:03:26,630 - logging_config - INFO - Successfully loaded batch 73 of order_items
+2025-01-03 11:03:27,020 - logging_config - INFO - Successfully loaded batch 74 of order_items
+2025-01-03 11:03:27,250 - logging_config - INFO - Successfully loaded batch 75 of order_items
+2025-01-03 11:03:27,496 - logging_config - INFO - Successfully loaded batch 76 of order_items
+2025-01-03 11:03:27,724 - logging_config - INFO - Successfully loaded batch 77 of order_items
+2025-01-03 11:03:27,976 - logging_config - INFO - Successfully loaded batch 78 of order_items
+2025-01-03 11:03:28,427 - logging_config - INFO - Successfully loaded batch 79 of order_items
+2025-01-03 11:03:28,732 - logging_config - INFO - Successfully loaded batch 80 of order_items
+2025-01-03 11:03:29,019 - logging_config - INFO - Successfully loaded batch 81 of order_items
+2025-01-03 11:03:29,312 - logging_config - INFO - Successfully loaded batch 82 of order_items
+2025-01-03 11:03:29,715 - logging_config - INFO - Successfully loaded batch 83 of order_items
+2025-01-03 11:03:29,983 - logging_config - INFO - Successfully loaded batch 84 of order_items
+2025-01-03 11:03:30,277 - logging_config - INFO - Successfully loaded batch 85 of order_items
+2025-01-03 11:03:30,586 - logging_config - INFO - Successfully loaded batch 86 of order_items
+2025-01-03 11:03:30,883 - logging_config - INFO - Successfully loaded batch 87 of order_items
+2025-01-03 11:03:31,196 - logging_config - INFO - Successfully loaded batch 88 of order_items
+2025-01-03 11:03:31,554 - logging_config - INFO - Successfully loaded batch 89 of order_items
+2025-01-03 11:03:31,806 - logging_config - INFO - Successfully loaded batch 90 of order_items
+2025-01-03 11:03:32,019 - logging_config - INFO - Successfully loaded batch 91 of order_items
+2025-01-03 11:03:32,229 - logging_config - INFO - Successfully loaded batch 92 of order_items
+2025-01-03 11:03:32,466 - logging_config - INFO - Successfully loaded batch 93 of order_items
+2025-01-03 11:03:32,895 - logging_config - INFO - Successfully loaded batch 94 of order_items
+2025-01-03 11:03:33,393 - logging_config - INFO - Successfully loaded batch 95 of order_items
+2025-01-03 11:03:33,797 - logging_config - INFO - Successfully loaded batch 96 of order_items
+2025-01-03 11:03:34,085 - logging_config - INFO - Successfully loaded batch 97 of order_items
+2025-01-03 11:03:34,399 - logging_config - INFO - Successfully loaded batch 98 of order_items
+2025-01-03 11:03:34,734 - logging_config - INFO - Successfully loaded batch 99 of order_items
+2025-01-03 11:03:35,005 - logging_config - INFO - Successfully loaded batch 100 of order_items
+2025-01-03 11:03:35,292 - logging_config - INFO - Successfully loaded batch 101 of order_items
+2025-01-03 11:03:35,586 - logging_config - INFO - Successfully loaded batch 102 of order_items
+2025-01-03 11:03:36,050 - logging_config - INFO - Successfully loaded batch 103 of order_items
+2025-01-03 11:03:36,525 - logging_config - INFO - Successfully loaded batch 104 of order_items
+2025-01-03 11:03:37,080 - logging_config - INFO - Successfully loaded batch 105 of order_items
+2025-01-03 11:03:37,483 - logging_config - INFO - Successfully loaded batch 106 of order_items
+2025-01-03 11:03:38,112 - logging_config - INFO - Successfully loaded batch 107 of order_items
+2025-01-03 11:03:38,622 - logging_config - INFO - Successfully loaded batch 108 of order_items
+2025-01-03 11:03:38,903 - logging_config - INFO - Successfully loaded batch 109 of order_items
+2025-01-03 11:03:39,138 - logging_config - INFO - Successfully loaded batch 110 of order_items
+2025-01-03 11:03:39,435 - logging_config - INFO - Successfully loaded batch 111 of order_items
+2025-01-03 11:03:39,681 - logging_config - INFO - Successfully loaded batch 112 of order_items
+2025-01-03 11:03:40,009 - logging_config - INFO - Successfully loaded batch 113 of order_items
+2025-01-03 11:03:40,622 - logging_config - INFO - Successfully loaded batch 114 of order_items
+2025-01-03 11:03:41,144 - logging_config - INFO - Successfully loaded batch 115 of order_items
+2025-01-03 11:03:41,475 - logging_config - INFO - Successfully loaded batch 116 of order_items
+2025-01-03 11:03:41,722 - logging_config - INFO - Successfully loaded batch 117 of order_items
+2025-01-03 11:03:42,017 - logging_config - INFO - Successfully loaded batch 118 of order_items
+2025-01-03 11:03:42,249 - logging_config - INFO - Successfully loaded batch 119 of order_items
+2025-01-03 11:03:42,577 - logging_config - INFO - Successfully loaded batch 120 of order_items
+2025-01-03 11:03:42,860 - logging_config - INFO - Successfully loaded batch 121 of order_items
+2025-01-03 11:03:43,112 - logging_config - INFO - Successfully loaded batch 122 of order_items
+2025-01-03 11:03:43,344 - logging_config - INFO - Successfully loaded batch 123 of order_items
+2025-01-03 11:03:43,899 - logging_config - INFO - Successfully loaded batch 124 of order_items
+2025-01-03 11:03:44,568 - logging_config - INFO - Successfully loaded batch 125 of order_items
+2025-01-03 11:03:45,178 - logging_config - INFO - Successfully loaded batch 126 of order_items
+2025-01-03 11:03:45,597 - logging_config - INFO - Successfully loaded batch 127 of order_items
+2025-01-03 11:03:45,881 - logging_config - INFO - Successfully loaded batch 128 of order_items
+2025-01-03 11:03:46,157 - logging_config - INFO - Successfully loaded batch 129 of order_items
+2025-01-03 11:03:46,570 - logging_config - INFO - Successfully loaded batch 130 of order_items
+2025-01-03 11:03:46,825 - logging_config - INFO - Successfully loaded batch 131 of order_items
+2025-01-03 11:03:47,068 - logging_config - INFO - Successfully loaded batch 132 of order_items
+2025-01-03 11:03:47,320 - logging_config - INFO - Successfully loaded batch 133 of order_items
+2025-01-03 11:03:47,695 - logging_config - INFO - Successfully loaded batch 134 of order_items
+2025-01-03 11:03:47,930 - logging_config - INFO - Successfully loaded batch 135 of order_items
+2025-01-03 11:03:48,252 - logging_config - INFO - Successfully loaded batch 136 of order_items
+2025-01-03 11:03:48,568 - logging_config - INFO - Successfully loaded batch 137 of order_items
+2025-01-03 11:03:49,054 - logging_config - INFO - Successfully loaded batch 138 of order_items
+2025-01-03 11:03:49,362 - logging_config - INFO - Successfully loaded batch 139 of order_items
+2025-01-03 11:03:49,724 - logging_config - INFO - Successfully loaded batch 140 of order_items
+2025-01-03 11:03:50,089 - logging_config - INFO - Successfully loaded batch 141 of order_items
+2025-01-03 11:03:50,473 - logging_config - INFO - Successfully loaded batch 142 of order_items
+2025-01-03 11:03:51,113 - logging_config - INFO - Successfully loaded batch 143 of order_items
+2025-01-03 11:03:51,467 - logging_config - INFO - Successfully loaded batch 144 of order_items
+2025-01-03 11:03:51,688 - logging_config - INFO - Successfully loaded batch 145 of order_items
+2025-01-03 11:03:51,991 - logging_config - INFO - Successfully loaded batch 146 of order_items
+2025-01-03 11:03:52,227 - logging_config - INFO - Successfully loaded batch 147 of order_items
+2025-01-03 11:03:52,446 - logging_config - INFO - Successfully loaded batch 148 of order_items
+2025-01-03 11:03:52,664 - logging_config - INFO - Successfully loaded batch 149 of order_items
+2025-01-03 11:03:52,921 - logging_config - INFO - Successfully loaded batch 150 of order_items
+2025-01-03 11:03:53,202 - logging_config - INFO - Successfully loaded batch 151 of order_items
+2025-01-03 11:03:53,459 - logging_config - INFO - Successfully loaded batch 152 of order_items
+2025-01-03 11:03:53,756 - logging_config - INFO - Successfully loaded batch 153 of order_items
+2025-01-03 11:03:54,021 - logging_config - INFO - Successfully loaded batch 154 of order_items
+2025-01-03 11:03:54,311 - logging_config - INFO - Successfully loaded batch 155 of order_items
+2025-01-03 11:03:54,683 - logging_config - INFO - Successfully loaded batch 156 of order_items
+2025-01-03 11:03:54,988 - logging_config - INFO - Successfully loaded batch 157 of order_items
+2025-01-03 11:03:55,259 - logging_config - INFO - Successfully loaded batch 158 of order_items
+2025-01-03 11:03:55,519 - logging_config - INFO - Successfully loaded batch 159 of order_items
+2025-01-03 11:03:55,769 - logging_config - INFO - Successfully loaded batch 160 of order_items
+2025-01-03 11:03:56,051 - logging_config - INFO - Successfully loaded batch 161 of order_items
+2025-01-03 11:03:56,393 - logging_config - INFO - Successfully loaded batch 162 of order_items
+2025-01-03 11:03:56,696 - logging_config - INFO - Successfully loaded batch 163 of order_items
+2025-01-03 11:03:56,964 - logging_config - INFO - Successfully loaded batch 164 of order_items
+2025-01-03 11:03:57,400 - logging_config - INFO - Successfully loaded batch 165 of order_items
+2025-01-03 11:03:57,630 - logging_config - INFO - Successfully loaded batch 166 of order_items
+2025-01-03 11:03:57,917 - logging_config - INFO - Successfully loaded batch 167 of order_items
+2025-01-03 11:03:58,192 - logging_config - INFO - Successfully loaded batch 168 of order_items
+2025-01-03 11:03:58,467 - logging_config - INFO - Successfully loaded batch 169 of order_items
+2025-01-03 11:03:58,874 - logging_config - INFO - Successfully loaded batch 170 of order_items
+2025-01-03 11:03:59,180 - logging_config - INFO - Successfully loaded batch 171 of order_items
+2025-01-03 11:03:59,441 - logging_config - INFO - Successfully loaded batch 172 of order_items
+2025-01-03 11:03:59,523 - logging_config - INFO - Successfully loaded batch 173 of order_items
