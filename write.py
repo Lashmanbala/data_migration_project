@@ -13,7 +13,7 @@ def build_insert_query(tabl_name, columns):
         logger.error(f'Error while building query string: {e}')
 
         
-def load_table(endpoint, db_name, user_name, password, table_name, columns, data, batch_size=100):
+def load_table(endpoint, db_name, user_name, password, table_name, columns, data, batch_size=1000):
     try:
         conn = psycopg2.connect( host = endpoint,
                                  port = 5432,
