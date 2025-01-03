@@ -62,7 +62,7 @@ migrate_tables_3 = DockerOperator(
     network_mode='migration_network',
     docker_url='unix://var/run/docker.sock',
     auto_remove='success',
-    env_file='.env', # it should be the relative path not the absolute path
+    env_file='.env', # it should be the relative path not the absolute path And it should present inside dags directory
     environment={
         'TABLE_LIST_STR':'order_items'
     },
