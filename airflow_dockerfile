@@ -1,0 +1,7 @@
+FROM apache/airflow:2.10.4
+
+RUN pip install apache-airflow-providers-docker
+
+RUN pip install apache-airflow-providers-postgres
+
+COPY /airflow/dags/migration_docker.py /opt/airflow/dags

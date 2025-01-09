@@ -1,0 +1,88 @@
+services:
+  # mysql_db:
+  #   image: mysql:latest
+  #   container_name: mysql_db
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: mysql123
+  #   volumes:
+  #     - /home/ubuntu/migration_project:/migration_project
+  #   networks:
+  #     - migration_network1
+  #   ports:
+  #     - "3306:3306"
+    # command: >
+    #   bash -c "
+    #   mysql --local-infile=1 -u${MYSQL_USER} -p${MYSQL_ROOT_PASSWORD} < /migration_project/database_files/mysql_cmds.sql
+    #   "
+
+  # postgres_db:
+  #   image: postgres:latest
+  #   container_name: postgres_db
+  #   environment:
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: postgres123
+  #     PGPASSWORD: postgres123
+  #   volumes:
+  #     - /home/ubuntu/migration_project:/migration_project
+  #   networks:
+  #     - migration_network1
+  #   ports:
+  #     - "5432:5432"
+  #   depends_on:
+  #     - mysql_db
+    # command: >
+    #   bash -c "
+    #   psql -U ${POSTGRES_USER} -f /migration_project/database_files/postgres_cmds.sql
+    #   "
+
+  # migration_app:
+  #   build: .
+
+  postgres_airflow:
+    image: postgres:latest
+    container_name: postgres_airflow
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
+      POSTGRES_DB: airflow_db
+    networks:
+      - migration_network1
+    ports:
+      - "6432:5432"
+    # depends_on:
+    #   - mysql_db
+    #   - postgres_db
+    #   - migration_app
+    
+  airflow:
+    build:
+      context: ./
+      dockerfile: airflow_dockerfile
+    container_name: airflow
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:postgres123@postgres_airflow:5432/airflow_db
+    networks:
+      - migration_network1
+    volumes:
+      - /home/ubuntu/migration_project/airflow/dags:/opt/airflow/dags
+      # - /home/ubuntu/migration_project/airflow/logs:/opt/airflow/logs
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres_airflow
+    entrypoint: /bin/bash
+    command: >
+      -c "
+      airflow db init &&
+
+      airflow users create --username admin --password admin --firstname Air --lastname Flow --role Admin --email admin@example.com &&
+
+      airflow scheduler -D &&
+
+      airflow webserver -D --port 8080
+      "
+
+networks:
+  migration_network1:
+    driver: bridge
