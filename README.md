@@ -8,7 +8,7 @@ I have developed a custom python application for this migration process and cont
 
 The python application container is being orchastrated by airflow. I've developed a DAG file to orchastrate.
 
-Airflow is running with postgres db in docker container.
+I have setup Airflow with postgres db in docker container.
 
 For demonstration purpose both mysql and postgres servers running in docker.
 
