@@ -1,0 +1,101 @@
+services:
+  mysql_db:
+    image: mysql:latest
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql123
+    volumes:
+      - /home/ubuntu/migration_project:/migration_project
+    networks:
+      - migration_network
+    ports:
+      - "3306:3306"
+    # command: >
+    #   bash -c "
+    #   sleep 300 &&
+    #   mysql --local-infile=1 -u${MYSQL_USER} -p${MYSQL_ROOT_PASSWORD} < /migration_project/database_files/mysql_cmds.sql
+    #   "
+
+  postgres_db:
+    image: postgres:latest
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
+      PGPASSWORD: postgres123
+    volumes:
+      - /home/ubuntu/migration_project:/migration_project
+    networks:
+      - migration_network
+    ports:
+      - "5432:5432"
+    depends_on:
+      - mysql_db
+    # command: >
+    #   bash -c "
+    #   sleep 60 &&
+    #   psql -U ${POSTGRES_USER} -f /migration_project/database_files/postgres_cmds.sql
+    #   "
+
+  migration_app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: migrator:latest
+    container_name: migrator
+    networks:
+      - migration_network
+    depends_on:
+      - postgres_db
+
+  postgres_airflow:
+    image: postgres:latest
+    container_name: postgres_airflow
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
+      POSTGRES_DB: airflow_db
+    networks:
+      - migration_network
+    ports:
+      - "6432:5432"
+    depends_on:
+      - migration_app
+    
+  airflow:
+    build:
+      context: ./
+      dockerfile: airflow_dockerfile
+    image: airflow:latest
+    container_name: airflow
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:postgres123@postgres_airflow:5432/airflow_db
+    networks:
+      - migration_network
+    volumes:
+      - /home/ubuntu/migration_project/airflow/dags:/opt/airflow/dags
+      - /var/run/docker.sock:/var/run/docker.sock    # docker socket is not available in the container, so volumed from the underlying machine
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres_airflow
+    entrypoint: /bin/bash
+    command: >
+      -c "
+      airflow db init &&
+
+      sleep 20 &&
+
+      airflow users create --username admin --password admin --firstname Air --lastname Flow --role Admin --email admin@example.com &&
+
+      airflow webserver -D --port 8080 &
+
+      sleep 20 &&
+
+      airflow scheduler
+      "
+
+networks:
+  migration_network:
+    driver: bridge
