@@ -40,7 +40,7 @@ services:
   migration_app:
     build:
       context: ./
-      dockerfile: Dockerfile
+      dockerfile: migrator_Dockerfile
     image: migrator:latest
     container_name: migrator
     networks:
@@ -65,7 +65,7 @@ services:
   airflow:
     build:
       context: ./
-      dockerfile: airflow_dockerfile
+      dockerfile: airflow_Dockerfile
     image: airflow:latest
     container_name: airflow
     environment:
