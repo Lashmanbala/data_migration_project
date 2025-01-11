@@ -10,11 +10,7 @@ services:
       - migration_network
     ports:
       - "3306:3306"
-    # command: >
-    #   bash -c "
-    #   sleep 300 &&
-    #   mysql --local-infile=1 -u${MYSQL_USER} -p${MYSQL_ROOT_PASSWORD} < /migration_project/database_files/mysql_cmds.sql
-    #   "
+    
 
   postgres_db:
     image: postgres:latest
@@ -31,11 +27,7 @@ services:
       - "5432:5432"
     depends_on:
       - mysql_db
-    # command: >
-    #   bash -c "
-    #   sleep 60 &&
-    #   psql -U ${POSTGRES_USER} -f /migration_project/database_files/postgres_cmds.sql
-    #   "
+    
 
   migration_app:
     build:
