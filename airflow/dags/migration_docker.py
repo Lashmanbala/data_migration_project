@@ -30,7 +30,7 @@ migrate_tables_1 = DockerOperator(
     auto_remove='success',
     env_file='.env', # it should be the relative path not the absolute path
     environment={
-        'TABLE_LIST_STR':'departments, categories, categories, products'
+        'TABLE_LIST_STR':'departments, categories, customers, products'
     },
     mounts=[
         Mount(source='/home/ubuntu/migration_project', target='/app', type='bind')
